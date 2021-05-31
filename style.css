@@ -1,0 +1,287 @@
+* {
+    font-family: arial;
+    scroll-behavior: smooth;
+}
+.bgimg {
+    background-image: url(images/dark%20bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.headerset {
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+.headerset h2 {
+    font-size: 42px;
+}
+.headerset h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+/*------------our service------------*/
+.ourservices {
+    padding: 100px 0px 60px;
+    height: 650px;    
+}
+.ourservices::before {
+    content:  '';
+    position: absolute;
+    top: 625px;
+    right: 0;
+    width: 100%;
+    height: 104%;
+    background: linear-gradient(darkred, green, orangered);
+    clip-path: polygon(50% 100%, 100% 50%, 50% 0%, 0% 50%);
+    /*clip-path: circle(20% at 10% 60%);*/
+    z-index: -1;
+    animation: satyam 3s linear infinite;
+    }
+.ourservices::after {
+    content:  '';
+    position: absolute;
+    top: 700px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, blue);
+    clip-path: circle(20% at 70% 60%);
+    z-index: -1;
+    animation: mishra 5s linear infinite;
+    }
+@keyframes mishra {
+    0% {clip-path: circle(0%)};
+    30% {clip-path: circle(23%)};
+    60% {clip-path: circle(60%)};
+    100% {clip-path: circle(100%)};
+    
+}
+.ourservices h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #161623;
+}
+.bgservice {
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+}
+.rowsetting {
+    margin: 80px 0px !important;    
+}
+.imgsetting {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: 0.4;
+}
+.fa-shopping-cart {
+    margin-top: 25px;    
+}
+.fa-desktop {
+    margin-top: 25px;
+}
+.fa-android {
+    margin-top: 25px;
+}
+.rowsetting h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.rowsetting p {
+    color: 6c757d !important;
+    padding: 10px;
+}
+/*-------------------------PORTFOLIO-----------------*/
+.portfolio {
+    height: 1100px;
+    width: 100%;
+    padding: 100px 0px 50px;
+    background: linear-gradient(orangered, darkred);
+}
+.portfolio h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.card {
+    margin-top: 40px;
+    transition: .3s transform ease;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+/*-------------ourteam-----------------*/
+.ourteam {
+    height: 700px;
+    padding: 60px 0px 60px;
+    width: 100%;
+    background: linear-gradient(red, blue);
+    clip-path: circle(50%);
+}
+.ourteam h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.teamsetting {
+    margin-top: 70px;    
+}
+.myteam1 {
+    transition: .5s;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px
+}
+.myteam1:hover {
+    transform: translateY(-20px);
+    background: rgba(0, 0, 0, 0.2);    
+    box-shadow: 5px 5px 15px #161623; 
+}
+.footer {
+    height: 50px;
+    background-color: 
+}
+.footer h6 {
+    padding: 16px
+}
+.divcent {
+    position: relative;
+    display: grid;
+    justify-items: center;    
+}
+.con {
+    width: 150px;
+    height: 50px;
+    padding: 13px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.con:hover {    
+    color: white;
+}
+.con:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(blue, darkred);
+    z-index: -1;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    transition: all .4s linear;
+}
+.con:hover:before {
+    transform: rotate(0deg);
+}
+
+
+/*----------media quaries-----------*/
+
+@media(min-width: 992px)
+{
+    
+}
+
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .headerset h2 {
+    font-size: 42px;
+}
+.headerset h1 {
+    font-size: 62px;
+    font-weight: bold;
+}
+    .ourservices {
+    height: 650px;
+    
+}
+    .portfolio {
+    height: 900px;
+}
+    .ourteam {
+        height: 650px;
+    }
+    
+}
+
+
+@media(min-width: 575px) and (max-width: 767px) {
+    .headerset h2 {
+    font-size: 32px;
+}
+.headerset h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+    .ourservices {
+    height: 750px;
+    
+}
+    .portfolio {
+    height: 3250px;
+}
+    .ourteam {
+        height: 1200px;
+        clip-path: circle(100%);
+    }
+    
+}
+
+
+@media(min-width: 460px) and (max-width: 574px) {
+    .headerset h2 {
+    font-size: 32px;
+}
+.headerset h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+    .ourservices {
+    height: 1200px;
+    
+}
+    .portfolio {
+    height: 2900px;
+}
+    .ourteam {
+        height: 1250px;
+        clip-path: circle(100%);
+    }
+    
+}
+
+
+@media(max-width: 459px) {
+    .headerset h2 {
+    font-size: 22px;
+}
+.headerset h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+    .ourservices {
+    height: 1350px;
+    
+}
+    .ourservices::before {
+    top: 735px;    
+    height: 184%;    
+    }
+    .portfolio {
+    height: 2500px;
+}
+    .ourteam {
+        height: 1280px;
+        clip-path: circle(100%);
+    }
+    
+    
+}
